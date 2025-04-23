@@ -1,0 +1,6 @@
+{
+    "diffEditor.ignoreTrimWhitespace": true,
+    "diffEditor.hideUnchangedRegions.enabled": true,
+    "git.openRepositoryInParentFolders": "always",
+    "python.defaultInterpreterPath": "/home/andrew/.venvs/tuxtools"
+}

@@ -7,7 +7,7 @@
 	   		"$2"
 	   	],
 	   	"description": "Log output to console"
-	}
+	},
 
 
 	"HTML/XML Tag": {
@@ -18,3 +18,4 @@
 		"description": "Creates a basic HTML/XML tag"
 	}
 	
+}

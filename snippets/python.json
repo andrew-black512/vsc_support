@@ -1,23 +1,32 @@
 
 	{
-		"Python Regex Pattern (Named Verbose)": {
+		"Named Regex Pattern (Verbose) singleline": {
 			"prefix": "pat",
+			"body": [
+				"${1:pattern_name} = re.compile(r\"$2 \", re.VERBOSE)$0"
+			],
+			"description": "Defines a named Python regex pattern with VERBOSE flag"
+		},
+		"Named Regex Pattern (Verbose) Multiline": {
+			"prefix": "patm",
 			"body": [
 				"${1:pattern_name} = re.compile(r\"\"\"$2\"\"\", re.VERBOSE)$0"
 			],
 			"description": "Defines a named Python regex pattern with VERBOSE flag"
 		},
-// python IO
-		"Python open file and read lines": {
+
+		"open file and read lines": {
 				"prefix": "openread",
 				"body": [
 					"with open(${1:filename_var}) as ${2:file_alias}:",
 					"\tfor ${3:line} in ${2:file_alias}:",
 					"\t\t# print(${3:line})$0"
+				],
+				"description": "Opens a file in write mode ('w')"
 			
 		},
 	 
-			"Python open file for writing": {
+			"open file for writing": {
 				"prefix": "openwrite",
 				"body": [
 					"with open('${1:filename}', 'w') as ${2:file_alias}:",
@@ -26,7 +35,7 @@
 				],
 				"description": "Opens a file in write mode ('w')"
 			},
-			"Python open file for appending": {
+			"open file for appending": {
 				"prefix": "openappend",
 				"body": [
 					"with open('${1:filename}', 'a') as ${2:file_alias}:",
@@ -34,16 +43,16 @@
 					"\t$0"
 				],
 				"description": "Opens a file in append mode ('a')"
-			}
+			},
 		
-		"Python f-string print": {
+		"Print with f-string ": {
 			"prefix": "pffp",
 			"body": [
 				"print(f\"   {${1:var_name}} \")"
 			],
 			"description": "Prints an f-string with leading/trailing spaces"
 		},
-		"Python f-string print with var": {
+		"f-string print with var={var}": {
 			"prefix": "pff",
 			"body": [
 				"print(f\" ${1:var_name} = {$1} \")"

@@ -1,0 +1,11 @@
+{
+	"Print to console": {
+		"prefix": "say",
+		"body": [
+			"say '$1' ;",
+			""
+	
+		],
+		"description": "Log output to console"
+	}
+}

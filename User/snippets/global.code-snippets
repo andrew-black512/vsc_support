@@ -1,0 +1,21 @@
+{
+	"Print to console": {
+	   	"scope": "javascript,typescript",
+	   	"prefix": "log",
+	   	"body": [
+	   		"console.log('$1');",
+	   		"$2"
+	   	],
+	   	"description": "Log output to console"
+	},
+
+
+	"HTML/XML Tag": {
+		"prefix": "tag",
+		"body": [
+			"<${1:tag}>${0:content}</$1>"
+		],
+		"description": "Creates a basic HTML/XML tag"
+	}
+	
+}
